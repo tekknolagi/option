@@ -3,7 +3,7 @@ build:
 	./build.native build
 
 release:
-	git add package.json opam
+	git add opam
 	git commit -m "Version $(version)"
 	git tag -a $(version) -m "Version $(version)."
 	# Push first the objects, then the tag.

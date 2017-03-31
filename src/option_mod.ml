@@ -36,5 +36,5 @@ let filter predicate =
   | Some v as self when predicate v -> self
   | _ -> None
 let fromResult =
-  function | Result.Ok v -> Some v | Result.Error _ -> None
+  function | Result_mod.Ok v -> Some v | Result_mod.Error _ -> None
 let (|?) opt v = getOr v opt

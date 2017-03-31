@@ -1,5 +1,3 @@
-(* Copyright (c) 2015-present, Facebook, Inc. All rights reserved. *)
-
 open Topkg
 
 let () =
@@ -13,5 +11,6 @@ let () =
   Pkg.describe "option" ~build ~change_logs:[] ~licenses:[] ~readmes:[] @@ fun c ->
     Ok [
       Pkg.lib "pkg/META";
-      Pkg.lib ~exts:(Exts.module_library) ~dst:"option" "src/option";
+      Pkg.lib ~exts:(Exts.library) ~dst:"result_mod" "src/result_mod";
+      Pkg.lib ~exts:(Exts.library) ~dst:"option_mod" "src/option_mod";
     ]
