@@ -1,0 +1,22 @@
+opam-version: "1.2"
+name: "option"
+version: "0.0.1"
+maintainer: "Maxwell Bernstein <max@bernsteinbear.com>"
+authors: [
+  "Maxwell Bernstein <max@bernsteinbear.com>"
+  "glennsl"
+]
+license: "MIT"
+homepage: "https://github.com/tekknolagi/option"
+doc: "https://github.com/tekknolagi/option"
+bug-reports: "https://github.com/tekknolagi/option/issues"
+dev-repo: "git://github.com/tekknolagi/option.git"
+tags: [ "option" "module" ]
+substs: [ "pkg/META" ]
+build: [
+  [make "build"]
+]
+depends: [
+  "topkg"   {>=  "0.8.1" & < "0.9"}
+]
+available: [ ocaml-version >= "4.02" & ocaml-version < "4.05" ]

@@ -1,0 +1,7 @@
+# Copyright (c) 2015-present, Facebook, Inc. All rights reserved.
+
+version = "%{version}%"
+description = "option: option module"
+
+archive(byte) = "option.cma"
+archive(native) = "option.cmxa"
